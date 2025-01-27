@@ -14,10 +14,12 @@ namespace AcunMedyaPortfolioProject.Views.Statistic
         public ActionResult Statistic()
         {
             var totalProjects = db.Projects.Count();
+            var totalTestimonials = db.Testimonials.Count();
             var totalCategories = db.Categories.Count();
             var totalExperiences = db.Experiences.Count();
 
             ViewBag.TotalProjects = totalProjects;
+            ViewBag.TotalTestimonials = totalTestimonials;
             ViewBag.TotalCategories = totalCategories;
             ViewBag.TotalExperiences = totalExperiences;
 
