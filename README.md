@@ -20,4 +20,5 @@ ASP.NET MVC Framework kullanılarak geliştirilmiş bir **kişisel portföy sayf
 ![a57fc4dc-8566-4638-9e24-6f8fddf32529](https://github.com/user-attachments/assets/860f11dd-3df1-40ba-be0a-3279c4e1fa45)  
 ![ffc5b5a5-0c73-4b9e-96c4-b66ae334719d](https://github.com/user-attachments/assets/7da4d47e-61ca-499f-8bfa-3581b810cea4)  
 ![acb549b5-e503-441d-945d-14eb0a5586cd](https://github.com/user-attachments/assets/70c7b98d-bdc9-4d92-a308-4def9753b1eb)  
-![c913eb76-3fae-44ae-b26e-ed369234040f](https://github.com/user-attachments/assets/efb7ce29-5d4f-4a42-8c09-ce6b3dbdd724)
+![3eeec45a-443f-4cfc-92f5-7533816bf0cd](https://github.com/user-attachments/assets/5f53eed8-6d99-4380-aa33-8df388a693bb)
+
