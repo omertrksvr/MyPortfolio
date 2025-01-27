@@ -1,0 +1,80 @@
+﻿@model List<AcunMedyaPortfolioProject.Models.About>
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/AdminLayout/Index.cshtml";
+}
+
+<div style="max-width: 1200px; margin: 40px auto; padding: 20px; background: #ffffff; border-radius: 12px; box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); display: flex; gap: 30px; flex-wrap: wrap;">
+
+    <!-- Profil Fotoğrafı Alanı -->
+    <div class="profile-photo" style="flex: 1; text-align: center;">
+        <img src="~/sidebar-01/images/kodlama.png"
+             alt="Profil Fotoğrafı"
+             style="width: 100%; max-width: 400px; border-radius: 12px; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);">
+    </div>
+
+    <!-- Hakkımda İçeriği -->
+    <div class="about-content" style="flex: 2; background: #f9f9fc; padding: 30px; border-radius: 12px; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);">
+        <h1 style="margin-bottom: 20px; color: #333; font-size: 28px; font-weight: bold;">Hakkımda</h1>
+        <p style="margin-bottom: 20px; color: #555; line-height: 1.6;">
+            Merhaba! Ben Ömer Türksever, Yönetim Bilişim Sistemleri (YBS) öğrencisiyim. Teknolojiye olan ilgimle birlikte sürekli öğrenmeye ve projeler üretmeye devam ediyorum.
+        </p>
+
+        <!-- Detaylar -->
+        <div class="about-details">
+            <h2 style="margin-bottom: 15px; color: #4CAF50; font-size: 22px;">Ben Kimim?</h2>
+            <p style="margin-bottom: 20px; color: #555; line-height: 1.6;">
+                YBS öğrencisi olarak yazılım geliştirme, web teknolojileri, algoritmalar ve yönetim bilişim sistemleri üzerine yoğunlaşıyorum.
+                Problem çözmeyi ve yeni teknolojiler öğrenmeyi çok seviyorum.
+            </p>
+
+            <h2 style="margin-bottom: 15px; color: #4CAF50; font-size: 22px;">Hobilerim</h2>
+            <ul style="margin-bottom: 20px; padding-left: 20px; color: #555; line-height: 1.6;">
+                <li>Yazılım geliştirme ve yeni teknolojiler öğrenmek</li>
+                <li>Spor yapmak ve kişisel gelişim</li>
+            </ul>
+
+            <h2 style="margin-bottom: 15px; color: #4CAF50; font-size: 22px;">Projelerim</h2>
+            <ul style="margin-bottom: 20px; padding-left: 20px; color: #555; line-height: 1.6;">
+                <li>Kişisel Portföy Web Sitesi: C# ve ASP.NET kullanarak geliştirdiğim kişisel portföy sitesi.</li>
+                <li>E-Ticaret Uygulaması: JavaScript ve MongoDB ile geliştirdiğim alışveriş sitesi.</li>
+            </ul>
+
+            <h2 style="margin-bottom: 15px; color: #4CAF50; font-size: 22px;">İletişim</h2>
+            <p style="margin-bottom: 20px; color: #555;">
+                Eğer benimle iletişime geçmek isterseniz, <strong><a href="mailto:omerturksever03@gmail.com" style="color: #4CAF50;">omerturksever03@gmail.com</a></strong> adresine ulaşabilirsiniz.
+            </p>
+
+            <a href="~/sidebar-01/Cv/Ömer Türksever.pdf" download="Ömer Türksever.pdf">
+                <button style="padding: 12px 24px; background-color: #4CAF50; color: white; border: none; border-radius: 6px; cursor: pointer; font-size: 16px; transition: background-color 0.3s ease;">
+                    CV'yi İndir
+                </button>
+            </a>
+        </div>
+    </div>
+
+    <!-- Sosyal Medya Alanı -->
+    <div style="flex: 1; display: flex; flex-direction: column; align-items: center; gap: 20px; padding: 20px; background: #f9f9fc; border-radius: 12px; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);">
+        <a href="https://www.linkedin.com/in/ömer-türksever-a12a64297/" target="_blank" style="text-decoration: none; color: #333; display: flex; align-items: center; gap: 10px;">
+            <img src="~/sidebar-01/images/LinkedIn.png" alt="LinkedIn" style="width: 40px; height: 40px;">
+            <span style="font-size: 16px; font-weight: bold;">LinkedIn</span>
+        </a>
+    </div>
+</div>
+
+<!-- İlham Verici Sözler -->
+<div style="margin-top: 40px; padding: 20px; background-color: #4CAF50; color: white; border-radius: 8px; text-align: center; font-size: 18px;">
+    <p id="quote" style="font-style: italic;">"Başarı, sürekli gelişimin bir sonucudur."</p>
+    <script>
+        const quotes = [
+            "Başarının sırrı, her zaman bir adım daha atabilmektir.",
+            "Kendine inan, her şey mümkün.",
+            "Büyük işler, küçük adımlarla başlar."
+        ];
+        let index = 0;
+        setInterval(() => {
+            index = (index + 1) % quotes.length;
+            document.getElementById('quote').innerText = quotes[index];
+        }, 5000);
+    </script>
+</div>

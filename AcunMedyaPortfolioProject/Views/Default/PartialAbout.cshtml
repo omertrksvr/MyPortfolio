@@ -1,0 +1,41 @@
+﻿@model AcunMedyaPortfolioProject.Models.About
+<div class="row about-info wide flex flex-wrap items-center justify-center gap-8 p-6 bg-gray-50 rounded-lg shadow-lg" data-animate-block>
+
+    <!-- Görsel Bloğu -->
+    <div class="column lg:w-1/2 md:w-full text-center">
+        <div class="column lg:w-1/2 md:w-full text-center">
+            <img src="~/sidebar-01/images/ben.jpg"
+                 alt="Kodlama Görseli"
+                 class="rounded-full shadow-lg border-4 border-blue-500"
+                 style="max-width: 300px; height: 300px; object-fit: cover; margin: 0 auto; transition: transform 0.3s; transform: scale(1);"
+                 data-animate-el>
+        </div>
+    </div>
+
+    <!-- Metin Bloğu -->
+    <div class="column lg:w-1/2 md:w-full">
+        <div class="about-info__text text-gray-800">
+
+            <h2 class="text-xl font-bold text-blue-600 mb-4 with-line" data-animate-el>
+                Yönetim Bilişim Sistemleri Öğrencisi
+            </h2>
+
+            <p class="text-lg mb-2">Merhaba,</p>
+            <p class="text-lg font-semibold mb-4">Ben Ömer Türksever</p>
+            <p class="text-base leading-relaxed mb-2">
+                Üçüncü sınıf Yönetim Bilişim Sistemleri öğrencisiyim ve yazılım geliştirme, web teknolojileri,
+                algoritmalar üzerine yoğunlaşıyorum.
+            </p>
+            <p class="text-base leading-relaxed mb-4">
+                Problem çözmeyi ve yeni teknolojiler öğrenmeyi çok seviyorum.
+            </p>
+
+            <!-- CV İndirme Butonu -->
+            <a href="~/sidebar-01/Cv/Ömer Türksever.pdf" download="Ömer Türksever.pdf">
+                <button class="px-6 py-2 bg-blue-600 text-white font-medium rounded-lg shadow hover:bg-blue-700 transition-all" data-animate-el>
+                    CV'yi İndir
+                </button>
+            </a>
+        </div>
+    </div>
+</div> 

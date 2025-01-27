@@ -1,0 +1,43 @@
+﻿@model List<AcunMedyaPortfolioProject.Models.Testimonial>
+<div class="row testimonials">
+    <div class="column lg-12" data-animate-block>
+
+        <div class="swiper-container testimonial-slider" data-animate-el>
+
+            <div class="swiper-wrapper">
+                @for (int i = 0; i < Model.Count; i++)
+                {
+                    <div class="testimonial-slider__slide swiper-slide">
+                        <div class="testimonial-slider__author">
+                            <!-- Burada sabit görselleri ekliyoruz -->
+                            @if (i == 0)
+                            {
+                                <img src="~/sidebar-01/images/gökhan.jpg" width="100" alt="Gökhan" class="testimonial-slider__avatar">
+                            }
+                            else if (i == 1)
+                            {
+                                <img src="~/sidebar-01/images/esra.jpg" width="100" alt="Esra" class="testimonial-slider__avatar">
+                            }
+                            else if (i == 2)
+                            {
+                                <img src="~/sidebar-01/images/murat.png" width="100" alt="Murat" class="testimonial-slider__avatar">
+                            }                        
+
+                            <cite class="testimonial-slider__cite">
+                                <strong>@Model[i].NameSurname</strong>
+                                <span>@Model[i].Title</span>
+                            </cite>
+                        </div>
+                        <p>
+                            @Model[i].Comment
+                        </p>
+                    </div> <!-- end testimonial-slider__slide -->
+                }
+            </div> <!-- end swiper-wrapper -->
+
+            <div class="swiper-pagination"></div>
+
+        </div> <!-- end swiper-container -->
+
+    </div> <!-- end column -->
+</div>
